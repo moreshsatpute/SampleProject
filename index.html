@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate(){
+            let username =document.getElementById('username').value;
+            let password =document.getElementById('password').value;
+            if(username=="Moresh@gmail.com" && password==12345){
+                alert("log in succesful");
+                return true;
+            }
+            else{
+                alert("Please enter a correct username and password  ")
+                return false;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <span id="logoName">KriShNa</span>
+            </div>
+            <div class="menu-section">
+                <a class="nav-menu" href="home.html">home</a>
+                <a class="nav-menu" href="#">about</a>
+                <a class="nav-menu" href="#">srevice</a>
+                <a class="nav-menu" href="#">design</a>
+                <a class="nav-menu" href="#">contact</a>
+
+            </div>
+            <div class="search-btn">
+                <input type="search" name="" id="search" id="" placeholder="Type to Search">
+                <button id="btn">search</button>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="headline">
+                <h1>web design &</h1>
+                <h1 id="change">devlopment</h1>
+                <h1>course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Dolor tempora repellendus dolore at iste, laboriosam aut explicabo mollitia quam tenetur consectetur illo quis modi? 
+                    Optio vel quae architecto officiis possimus.</p>
+                <div class="btn">
+                    <button>join us</button>
+                </div>
+            </div>
+            <form  onsubmit="return validate()" action="home.html" class="box">
+            <div class="loginform">
+
+                    <div class="login-btn">
+                        <button class="btn-1">login here</button>
+                    </div>
+                    <div class="enter-value">
+                        <input type="email" placeholder="enter email here"  id="username" value="">
+                        <input type="password" placeholder="enter password here" id="password" value="">
+                        <input id="btn" 
+                        type="submit"
+                        value="login"/>
+                    </div>
+                    <div class="signup">
+                        <p>don't have an account?</p>
+                        <p><a href="signUP.html"><strong>Sign Up</strong></a>here</p>
+                    </div>
+    
+                </div>
+                </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
